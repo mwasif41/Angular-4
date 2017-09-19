@@ -1,0 +1,11 @@
+  <h2 class="text-info">  
+    Timer for 1 hour
+  </h2>
+  <div class="time">
+  <span >{{time.getHours()}} : </span>
+  <span>{{time.getMinutes()}} : </span>
+  <span>{{time.getSeconds()}}</span>
+  </div>
+
+
+<button (click)="buttonClicked()" class="btn btn-info">{{ started ? 'Reset' : 'Start'}}</button>
